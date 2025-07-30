@@ -12,7 +12,18 @@ while True:
             case 1:
                 print()
             case 2:
+                def Repetir_Palabra(palabra, veces):
+                    if veces <= 0:
+                        return 0
+                    if veces == 1:
+                        return palabra
+                    return palabra + Repetir_Palabra(palabra, veces - 1)
 
+                Frase = input("Ingresa una frase: ")
+                Cantidad = int(input("Cuantas veces desea ingresar: "))
+
+                Resultado = Repetir_Palabra(Frase, Cantidad)
+                print(Resultado)
             case 3:
                 def Contar_Palabra(Palabra, letra):
                     if not Palabra:
