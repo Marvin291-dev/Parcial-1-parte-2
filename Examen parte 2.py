@@ -46,9 +46,9 @@ while True:
                     if n < 0:
                         return "-" + Numerodecimal_Binario(-n)
                     if n == 0:
-                        return "0"
+                        return 0
                     if n == 1:
-                        return "1"
+                        return 1
                     return Numerodecimal_Binario(n // 2) + str(n % 2)
 
                 numero = input("Ingresa un numero: ")
@@ -57,7 +57,7 @@ while True:
                 print(binario)
             case 5:
                 def Cuantos_Digitos(n):
-                    n = abs(n)
+
                     if n < 10:
                         return 1
                     return 1 + Cuantos_Digitos(n // 10)
